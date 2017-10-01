@@ -1,10 +1,3 @@
-# Frontend Technical Test
-
-Frontend Technical Test for Connect Group www.connect-group.com
-
-#### Requirements
-* [Node.js](https://nodejs.org/en/)(6.x.x)
-
 ## Setup
 Get things setup by typing the following on the command line:
 ````
