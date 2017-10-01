@@ -1,0 +1,62 @@
+@import "~styles/variables";
+
+.vehicle-container {
+    margin: 0 -1px -1px 0;
+}
+
+.vehicle {
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 10px;
+    text-align: left;
+
+    @media #{$tablet-and-bigger} {
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: #f9f9f9;
+        cursor: pointer;
+    }
+
+    &__image {
+        margin: 0 auto;
+    }
+}
+
+.vehicle-details {
+    padding-left: 30px;
+
+    @media #{$tablet-and-bigger} {
+        padding-left: 0;
+    }
+
+    &__name {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-top: 1.3em;
+
+        @media #{$mobile} {
+            margin: 0;
+            padding: 0;
+        }
+
+        @media #{$tablet-and-bigger} {
+            border-top: 2px solid #000000;
+            border-bottom: 2px solid #000000;
+        }
+    }
+
+    &__price {
+        color: #666666;
+    }
+
+    &__description {
+        color: #666666;
+
+        @media #{$tablet-and-bigger} {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<div class="o-grid o-grid--wrap o-grid--no-gutter vehicle-container">
+    <div *ngFor="let vehicle of vehicles" class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-50@medium o-grid__cell--width-100@large vehicle">
+        <div class="o-grid o-grid--wrap o-grid--no-gutter">
+            <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-100@medium">
+                <img class="o-image vehicle__image" src="assets{{vehicle.media[0].url}}">
+            </div>
+            <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-100@medium vehicle-details">
+                <h1 class="c-heading vehicle-details__name">{{vehicle.id}}</h1>
+                <h2 class="c-heading vehicle-details__price">From {{vehicle.price}}</h2>
+                <p class="c-paragraph vehicle-details__description">{{vehicle.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
